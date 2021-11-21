@@ -17,7 +17,7 @@ export function EditMovie() {
     fetch(`https://6166c4db13aa1d00170a66fd.mockapi.io/movie-app/${id}`)
       .then((data) => data.json())
       .then((mv) => setMovie(mv));
-  }, []);
+  }, [id]);
   return movie ? <UpdateMovie movie={movie} /> : " ";
 }
 function UpdateMovie({ movie }) {
