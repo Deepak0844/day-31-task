@@ -28,7 +28,6 @@ export function PosterSlider() {
               <span>
                 <h1>{mve.title}</h1>
                 <p>{mve.genre}</p>
-                <h3>Watch Trailer</h3>
               </span>
             </section>
           </div>
