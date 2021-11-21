@@ -47,7 +47,7 @@ export function Details() {
           <p>{movies.rating}</p>
         </div>
         <p>{movies.releasedyear}</p>
-        <Button onClick={() => { history.push("/edit-movie/" + movies.id); }} color="warning">Edit</Button>
+        <Button style={{marginBottom:"10px"}} onClick={() => { history.push("/edit-movie/" + movies.id); }} color="warning">Edit</Button>
         <Button onClick={deleteBtn} color="error">Delete</Button>
         <div className="information">
           <p><b>Director : </b>{movies.director}</p>

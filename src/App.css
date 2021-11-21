@@ -48,7 +48,7 @@ body {
 }  
 .slider-content section {
     position: absolute;
-    bottom: 50px;
+    bottom: 80px;
     left: 50px;
 }
 section h1 {
@@ -190,6 +190,7 @@ align-items: center;
 .movieDetails{
 grid-template-columns: 1fr;
 }
+
 }
 /* movie details */
 /* inputs */
