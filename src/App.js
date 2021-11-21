@@ -18,7 +18,7 @@ const history = useHistory();
 <div>
     <AppBar position="static" style={{background:"#ffffff",color:"black",width:"100%",boxShadow:"none"}}>
       <Toolbar variant="dense">
-        <Button variant="text" color="secondary" onClick={()=> history.push("/movies")}>
+        <Button variant="text" color="secondary" onClick={()=> history.push("/")}>
           Movies
         </Button>
         <Button style={{minWidth:"120px"}}onClick={()=>history.push("/add-movie")} variant="text" color="secondary">
@@ -27,7 +27,7 @@ const history = useHistory();
       </Toolbar>
     </AppBar>
 <Switch>
-<Route exact path="/movies">
+<Route exact path="/">
   <PosterSlider />
   <Movies/>
  </Route>

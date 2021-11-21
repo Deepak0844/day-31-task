@@ -21,7 +21,7 @@ export function Details() {
     fetch(`https://6166c4db13aa1d00170a66fd.mockapi.io/movie-app/${id}`,
       {
         method: "DELETE",
-      }).then(() => getMovies()).then(() => history.push("/movies"));
+      }).then(() => getMovies()).then(() => history.push("/"));
   };
   console.log("rating", movies.rating);
   return (
