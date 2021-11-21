@@ -1,0 +1,232 @@
+body {
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+  }
+  /* slider */
+.slider-wrapper {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    margin: 20px;
+    margin-top: 0;
+    border-radius: 20px;
+} 
+.slide {
+    height: 70vh;
+    background-size: cover !important;
+}
+.slide::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    bottom: 0;
+    left: 0;
+}
+  
+.previousButton,
+.nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    cursor: pointer;
+}  
+.nextButton{
+    background: url("https://img.icons8.com/external-becris-lineal-becris/50/000000/external-next-mintab-for-ios-becris-lineal-becris.png") no-repeat center center /35px;
+}
+.previousButton{
+    background: url("https://img.icons8.com/ios-filled/50/000000/back.png")no-repeat center center /35px;
+}
+.nextButton {
+    right: 0;
+}  
+.slider-content section {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+section h1 {
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin: 0;
+}
+section p{
+    color: rgba(197, 197, 197, 0.582);
+    font-weight: bold;
+}
+section h3{
+    color:rgba(255, 0, 0, 0.61);
+}
+
+@media (max-width: 640px) {
+.slider-wrapper,
+.slide {
+    height: calc(70vh - 100px);
+}
+.previousButton,.nextButton{
+    background: none;
+}
+.slider-content section{
+bottom:10px;
+left:15px
+}
+.slider-content p{
+margin: 5px;
+}
+Button{
+    width: 20px;
+    height: 0px;
+}
+section h3{
+font-size: 12px;
+}
+}
+ @media (max-width: 500px) {
+.slider-wrapper,.slide {
+    height: calc(50vh - 90px);
+}     
+section h1{
+    font-size: 18px;
+}
+section p{
+    font-size: 10px;
+}
+.slider-wrapper {
+    margin:5px;
+}
+}
+/* slider */
+/* movie card */
+.movieCard{
+    border-radius: 20px;
+    overflow :hidden;
+    width:300px;
+    height: 340px;
+    cursor: pointer;
+}
+.movieCard:hover{
+transform: translateY(-5px);
+transition-duration: 0.2s;
+}
+
+.movieCard img{
+    width:300px;
+    height: 360px;
+    object-fit: cover;  
+}
+.movieTitle{
+    position: relative;
+    top: -120px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+.movieList{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+/* movie card */
+/* movie details */
+.movieDetails{
+  display: grid;
+  grid-template-columns: 1fr 0.7fr ;
+  width: 100%;
+  object-fit: cover;
+  row-gap: 10px;
+}
+.detailsLeft{
+ color: rgb(255, 255, 255); 
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.detailsLeft{
+    margin: 0px;
+    font-size: 25px;
+}
+.detailsRight{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 17px );
+    -webkit-backdrop-filter: blur( 17px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(100vh - 80px)
+}
+.detailsRight img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.information{
+    border-top: 1px solid black;
+}
+@media (max-width: 768px){
+.movieDetails{
+grid-template-columns: 1fr;
+}
+}
+/* movie details */
+/* inputs */
+.inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 50px;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+.input1{
+    margin-top: 40px;
+    display: grid;
+    padding: 0 50px;
+}
+.backBtn{
+    padding: 0 50px;
+}
+.addSaveBtn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center
+}
+@media (max-width:700px) {
+.inputs{
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+    row-gap: 20px;
+}
+.input1{
+    padding: 0 10px;
+    margin-top: 20px;
+}
+.backBtn{
+    padding: 0 10px;
+}
+}
+
+/* inputs */
